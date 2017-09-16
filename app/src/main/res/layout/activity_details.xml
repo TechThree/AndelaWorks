@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chuks.andelagithubproject.DetailsActivity">
+
+    <ImageView
+        android:id="@+id/user_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/user_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Chuks Obi"
+        android:textSize="22sp"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/user_profile_textview"
+        android:layout_below="@id/user_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="http://dummyurl.com"
+        android:textSize="22sp"
+        android:layout_marginTop="22dp"
+        android:layout_centerInParent="true"
+        />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</RelativeLayout>

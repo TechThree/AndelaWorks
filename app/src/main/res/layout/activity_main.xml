@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chuks.andelagithubproject.MainActivity">
+
+    <ListView
+        android:id="@+id/list"
+        android:orientation="vertical"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+    <!-- Empty view is only visible when the list has no items-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/empty_state_textview"
+        tools:text="List of Java Developers Could Not Be Found!"
+        android:gravity="center"
+        android:textSize="16sp"/>
+
+    <!-- Loading indicator is only shown before the first load-->
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loading_indicator"
+        android:layout_centerInParent="true"
+        style="@style/Widget.AppCompat.ProgressBar"/>
+
+</RelativeLayout>
